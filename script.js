@@ -7,15 +7,7 @@ document.getElementById("generateLink").addEventListener("click", function() {
       const smartLink = `https://zeuss574.github.io/smartlink2/${songTitle.replace(/ /g, "-")}`; 
       document.getElementById("smartLink").innerText = smartLink;
     })
-    .catch(error => console.error('Error:', error));
-  const express = require("express");
-const cors = require("cors");
-
-const corsOptions = {
-  origin: "https://zeuss574.github.io/smartlink2/",
-};
-
-const app = express();
-app.use(cors(corsOptions));
+ Access-Control-Allow-Origin: *
+ Access-Control-Allow-Origin: https://zeuss574.github.io/smartlink2
 
 });
