@@ -8,4 +8,14 @@ document.getElementById("generateLink").addEventListener("click", function() {
       document.getElementById("smartLink").innerText = smartLink;
     })
     .catch(error => console.error('Error:', error));
+  const express = require("express");
+const cors = require("cors");
+
+const corsOptions = {
+  origin: "https://zeuss574.github.io/smartlink2/",
+};
+
+const app = express();
+app.use(cors(corsOptions));
+
 });
