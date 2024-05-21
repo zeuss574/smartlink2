@@ -4,7 +4,7 @@ document.getElementById("generateLink").addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const songTitle = data.title;
-      const smartLink = `https://example.com/${songTitle.replace(/ /g, "-")}`; 
+      const smartLink = `https://zeuss574.github.io/smartlink2/${songTitle.replace(/ /g, "-")}`; 
       document.getElementById("smartLink").innerText = smartLink;
     })
     .catch(error => console.error('Error:', error));
