@@ -1,6 +1,6 @@
 document.getElementById("generateLink").addEventListener("click", function() {
   const musicLink = document.getElementById("musicLink").value;
-  fetch(`https://api.odesli.co/matches?url=${musicLink}&songIfSingle=true`)
+  fetch(`https://api.allorigins.win/raw?url=https://api.odesli.co/matches?url=${musicLink}`)
     .then(response => response.json())
     .then(data => {
       // Access the song IDs from the Spotify data
